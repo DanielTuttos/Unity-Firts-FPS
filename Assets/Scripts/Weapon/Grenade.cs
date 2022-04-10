@@ -13,6 +13,8 @@ public class Grenade : MonoBehaviour
 
     bool exploded = false;
 
+    public GameObject explosionEffect;
+
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +35,7 @@ public class Grenade : MonoBehaviour
 
     void Explode()
     {
+        Instantiate(explosionEffect, transform.position, transform.rotation);
         Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
         foreach (var rangeObjects in colliders)
         {
