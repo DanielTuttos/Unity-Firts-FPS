@@ -1,0 +1,3 @@
+rep "PrimerFPS@tutorialesdanielromero@cloud"
+  path "/"
+    smartbranch "/main"
