@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -22,6 +23,21 @@ public class GameManager : MonoBehaviour
     {
         ammoText.text = gunAmmo.ToString();
         healtText.text = healt.ToString();
+    }
+
+    public void LoseHealth(int healthToReduce)
+    {
+        healt -= healthToReduce;
+        CheckHealth();
+    }
+
+    public void CheckHealth()
+    {
+        if (healt <= 0)
+        {
+            Debug.Log("HasMuerto");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 
 }

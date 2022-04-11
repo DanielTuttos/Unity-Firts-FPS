@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7229792179159626691}
   - component: {fileID: 7229792179159626694}
   - component: {fileID: 7229792179159626695}
+  - component: {fileID: 4451799062966738667}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -128,7 +129,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7229792179159626700}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f75e3c2fb848132468eeef82b957ddf6, type: 3}
   m_Name: 
@@ -140,6 +141,21 @@ MonoBehaviour:
   distanceToFollowPath: 2
   followPlayer: 0
   distanceToFollowPlayer: 10
+--- !u!114 &4451799062966738667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7229792179159626700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cb2c6ab582f69a41a976be1aeeb7044, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyBullet: {fileID: 0}
+  spawnBulletPoint: {fileID: 0}
+  bulletVelocity: 100
 --- !u!1 &7229792179691109969
 GameObject:
   m_ObjectHideFlags: 0
